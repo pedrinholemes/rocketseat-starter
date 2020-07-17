@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Starter - Modulo 1 - Atividade 5</title>
+</head>
+
+<body>
+    <script src="/console.js"></script>
+    <button onclick="usuarios.forEach(element => renderConsole(format(element)));">Refazer</button>
+    <script>
+        /* Exercicio 5 */
+        var usuarios = [{
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+        }, {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }];
+
+        function format(user) {
+            var string = `O ${user.nome} possui as habilidades:`;
+            user
+                .habilidades
+                .forEach((element, index) => {
+                    if (index == 0) {
+                        string += ` ${element}, `
+                        return
+                    }
+
+                    if (index == user.habilidades.length - 1) {
+                        string += `${element};`
+                        return
+                    }
+                    string += `${element}, `
+                });
+            return string
+        };
+        usuarios.forEach(element => renderConsole(format(element)));
+    </script>
+
+</body>
+
+</html>

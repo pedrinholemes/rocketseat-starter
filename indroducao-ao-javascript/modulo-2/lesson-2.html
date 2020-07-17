@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Starter - Modulo 2 - Atividade 2</title>
+</head>
+
+<body>
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        const ul = document.createElement('ul')
+        nomes.forEach(element => {
+            renderList(element)
+        })
+
+        function renderList(te) {
+            const li = document.createElement('li')
+            li.innerText = te
+            ul.appendChild(li)
+        }
+        document
+            .body
+            .append(ul)
+    </script>
+</body>
+
+</html>

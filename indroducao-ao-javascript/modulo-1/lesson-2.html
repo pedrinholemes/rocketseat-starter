@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter - Modulo 1 - Atividade 2</title>
+</head>
+
+<body>
+    <button onclick="pares(32,321)">Refazer</button>
+    <script>
+        /* Exercicio 2 */
+        function pares(x, y) {
+            var numerosPar = []
+            for (let i = x; i < y; i++) {
+                if (i % 2 != 1) {
+                    numerosPar.push(i)
+                }
+            }
+            renderConsole(numerosPar)
+            return numerosPar
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+
+        pares(32, 321);
+    </script>
+    <script src="/console.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter - Modulo 1 - Atividade 3</title>
+</head>
+
+<body>
+    <script src="/console.js"></script>
+    <button onclick="temHabilidade(skills)">Refazer</button>
+    <script>
+        /* Exercicio 3 */
+        function temHabilidade(skills) {
+            if (skills.indexOf('Javascript') >= 0) {
+                renderConsole("Tem habilidade")
+                return true
+            } else {
+                renderConsole("Não tem habilidade")
+                return false
+            }
+
+        }
+
+        temHabilidade(skills);
+    </script>
+</body>
+
+</html>

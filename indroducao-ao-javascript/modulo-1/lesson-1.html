@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter - Modulo 1 - Atividade 1</title>
+</head>
+
+<body>
+    <script src="/console.js"></script>
+    <button onclick="print(endereco)">Refazer</button>
+    <script>
+        /* Execicio 1 */
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function print(obj) {
+            renderConsole(`O usuário mora em ${obj.cidade} / ${obj.uf}, no bairro ${obj.bairro}, na rua "${obj.rua}" com nº ${obj.numero}.`);
+        }
+
+        print(endereco);
+    </script>
+</body>
+
+</html>
